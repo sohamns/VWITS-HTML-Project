@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Somaiya</a>
+        <div class="header-right">
+            <a href="Home.html">Home</a>
+            <ul class="dropdown">
+                <button class="dropbtn">Academics</button>
+                <div class="dropdown-content">
+                    <ul class="dra"><button class="dropbtn">Arts</button>
+                        <div class="dropdown-arts">
+                            <li><a href="English.html">English</a></li>
+                            <li><a href="History.html">History</a></li>
+                            <li><a href="PoliticalScience.html">Political Science</a></li>
+                            <li><a href="Sociology.html">Sociology</a></li>
+                        </div>
+                    </ul>
+                    <ul class="drs"><button class="dropbtn">Science</button>
+                        <div class="dropdown-science">
+                            <li><a href="Maths.html">Mathematics</a></li>
+                            <li><a href="Physics.html">Physics</a></li>
+                            <li><a href="Chemistry.html">Chemistry</a></li>
+                            <li><a href="Comps.html">Computer Science</a></li>
+                        </div>
+                    </ul>
+                    <ul class="drc"><button class="dropbtn">Commerce</button>
+                        <div class="dropdown-commerce">
+                            <li><a href="Accountancy.html">Accountancy</a></li>
+                            <li><a href="Business.html">Business Studies</a></li>
+                            <li><a href="Economics.html">Economics</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+            <a class="active" href="Admission.html">Admission</a>
+            <a href="Gallery.html">Gallery</a>
+        </div>
+    </div>
+    
+
+    <div class="bg-img">
+        <form class="form-container" style="overflow: scroll;">  
+            <center>  <h1> Student Registration Form</h1> </center>  
+            <hr>  
+            <label> First Name </label>   
+          <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+          <label> Middle Name: </label>   
+          <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+          <label> Last Name: </label>    
+          <input type="text" name="lastname" placeholder="Lastname" size="15"required />    
+
+          <div>  
+            <label>   
+            Gender :  
+            </label><br>  <br>
+            <input type="radio" value="Male" name="gender" checked > Male   
+            <input type="radio" value="Female" name="gender"> Female   
+            <input type="radio" value="Other" name="gender"> Other     
+          </div>  <br>
+
+          <label>   
+          Phone :  
+          </label>  
+          <input name="country code" placeholder="Country Code"  value="+91" size="2" style="width: 10%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;"/>   
+          <input name="phone" placeholder="Phone no." size="10"/ required style="width: 60%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;"> <br><br>  
+          Current Address :  
+          <textarea cols="20" rows="5" placeholder="Current Address" value="address" required>  
+          </textarea>
+
+          <label> School Name </label>    
+          <input type="text" name="school" placeholder="Previous School" required />
+
+          <label> Marks Obtained </label>    
+          <input type="text" name="marks" placeholder="Marks in %" required />
+
+          <div>  
+            <label>   
+            Preferred Stream :  
+            </label>   
+                
+            <select>  
+            <option value="Course">Course</option>  
+            <option value="Arts">Arts</option>  
+            <option value="Science">Science</option>  
+            <option value="Commerce">Commerce</option>  
+            </select>  
+          </div> 
+
+           <label for="email"><b>Email</b></label>  
+           <input type="text" placeholder="Enter Email" name="email" required>  
+            
+            <label for="psw"><b>Password</b></label>  
+            <input type="password" placeholder="Enter Password" name="psw" required>  
+        
+            <label for="psw-repeat"><b>Re-type Password</b></label>  
+            <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+            <button type="submit" class="registerbtn">Register</button>    
+          </form>  
+    </div>
+
+    <footer>
+        <div class="row3">
+        <div class="column3">
+            <h3>About Us</h3>
+            <p>KJSIEIT abides by the vision of its founder Padmabhushan Pujya (late) Shri. Karamshi J Somaiya, who set up the K J
+                Somaiya Trust in 1951. He envisaged that the Somaiya group of Institutions must be recognized as the ‘Nalanda’ of
+                learning where students and teachers work in an integral ambience for the betterment and upliftment of our society.
+            </p>
+        </div>
+    
+        <div class="column3" style="padding-left: 250px;">
+            <h3>Quick Links</h3>
+            <ul style="list-style-type: none;">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Home.html">Academics</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        </div>
+      </footer>
+</body>
+</html>

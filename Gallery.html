@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Somaiya</a>
+        <div class="header-right">
+            <a href="Home.html">Home</a>
+            <ul class="dropdown">
+                <button class="dropbtn">Academics</button>
+                <div class="dropdown-content">
+                  <ul class="dra"><button class="dropbtn">Arts</button>
+                    <div class="dropdown-arts">
+                        <li><a href="English.html">English</a></li>
+                        <li><a href="History.html">History</a></li>
+                        <li><a href="PoliticalScience.html">Political Science</a></li>
+                        <li><a href="Sociology.html">Sociology</a></li>
+                    </div>
+                </ul>
+                <ul class="drs"><button class="dropbtn">Science</button>
+                    <div class="dropdown-science">
+                        <li><a href="Maths.html">Mathematics</a></li>
+                        <li><a href="Physics.html">Physics</a></li>
+                        <li><a href="Chemistry.html">Chemistry</a></li>
+                        <li><a href="Comps.html">Computer Science</a></li>
+                    </div>
+                </ul>
+                <ul class="drc"><button class="dropbtn">Commerce</button>
+                    <div class="dropdown-commerce">
+                        <li><a href="Accountancy.html">Accountancy</a></li>
+                        <li><a href="Business.html">Business Studies</a></li>
+                        <li><a href="Economics.html">Economics</a></li>
+                    </div>
+                </ul>
+                </div>
+            </ul>
+            <a href="Admission.html">Admission</a>
+            <a class="active" href="Gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Images used to open the lightbox -->
+<div class="row1">
+    <div class="column1">
+      <img src="images/slide1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/science.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"width="350px">
+    </div>
+</div>
+
+<div class="row1">
+    <div class="column1">
+      <img src="images/slide1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/science.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"width="350px">
+    </div>
+</div>
+
+<div class="row1">
+    <div class="column1">
+      <img src="images/slide1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/slide3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"width="350px">
+    </div>
+    <div class="column1">
+      <img src="images/science.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"width="350px">
+    </div>
+</div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/slide1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/slide2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/slide3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/science.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/slide1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/slide2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/slide3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/science.jpg" style="width:100%">
+      </div>
+
+      
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column1">
+        <img class="demo" src="images/slide1.jpg" onclick="currentSlide(1)" alt="Nature" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/slide2.jpg" onclick="currentSlide(2)" alt="Snow" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/slide3.jpg" onclick="currentSlide(3)" alt="Mountains" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/science.jpg" onclick="currentSlide(4)" alt="Lights" width="300px">
+      </div>
+
+      <div class="column1">
+        <img class="demo" src="images/slide1.jpg" onclick="currentSlide(1)" alt="Nature" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/slide2.jpg" onclick="currentSlide(2)" alt="Snow" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/slide3.jpg" onclick="currentSlide(3)" alt="Mountains" width="300px">
+      </div>
+  
+      <div class="column1">
+        <img class="demo" src="images/science.jpg" onclick="currentSlide(4)" alt="Lights" width="300px">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row3">
+    <div class="column3">
+        <h3>About Us</h3>
+        <p>KJSIEIT abides by the vision of its founder Padmabhushan Pujya (late) Shri. Karamshi J Somaiya, who set up the K J
+            Somaiya Trust in 1951. He envisaged that the Somaiya group of Institutions must be recognized as the ‘Nalanda’ of
+            learning where students and teachers work in an integral ambience for the betterment and upliftment of our society.
+        </p>
+    </div>
+
+    <div class="column3" style="padding-left: 250px;">
+        <h3>Quick Links</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Home.html">Academics</a></li>
+            <li><a href="Admission.html">Admission</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    </div>
+  </footer>
+
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+</body>
+</html>
